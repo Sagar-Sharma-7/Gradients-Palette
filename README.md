@@ -1,6 +1,6 @@
 ## Searching for Best Gradients for your project?
 ## Don't worry just click on the link below.
-### [Gradients Palette]()
+### [Gradients Palette](https://sagar-sharma-7.github.io/Gradients-Palette/)
 
 ### ```NOTE: Open the above link in Google Chrome...```
 
