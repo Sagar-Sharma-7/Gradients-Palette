@@ -76,6 +76,7 @@ h1 {
   font-size: 2vw;
   font-family: "Special Elite", cursive;
   text-transform: uppercase;
+  margin-bottom: 2vw;
 }
 
 .palette:hover {
