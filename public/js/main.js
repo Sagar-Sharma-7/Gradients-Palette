@@ -1,7 +1,14 @@
+AOS.init();
+
 const palette = document.querySelectorAll(".palette");
+const h1 = document.querySelector("H1");
+const h2 = document.querySelectorAll("H2")
+
+h1.innerHTML = "Click To Copy";
+h2.innerHTML = "Gradient Palette";
 
 palette.forEach((linear_gradients) => {
-    linear_gradients.style.background = `linear-gradient(to right, ${linear_gradients.innerHTML})`
+    linear_gradients.style.background = `linear-gradient(to right, ${linear_gradients.innerHTML})`;
 });
 
 palette.forEach((paletteBox) => {
