@@ -1,4 +1,5 @@
 AOS.init();
+ScrollReveal().reveal('.headline')
 
 const palette = document.querySelectorAll(".palette");
 const h1 = document.querySelector("H1");
