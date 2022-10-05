@@ -1,0 +1,43 @@
+@mixin flex($jus: center, $alg: center){
+    display: flex;
+    justify-content: $jus;
+    align-items: $alg;
+}
+
+@mixin grid($item){
+    display: grid;
+    grid-template-columns: repeat(1fr, $item);
+}
+
+@mixin dimension($ln, $hg){
+    width: $ln;
+    height: $hg;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    @media (min-width: 700px) {
+      font-size: calc(10px + 0.5vw);
+    }
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+}
+
+header{
+    @include flex(space-between, center);
+    h2{
+        color: #ffffff;
+    }
+    // border: 1px solid green;
+    padding: 1% 1%;
+}
