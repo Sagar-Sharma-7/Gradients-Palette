@@ -36,4 +36,38 @@ header {
 header h2 {
   color: #ffffff;
 }
+
+#navigator {
+  background-color: rgba(255, 255, 255, 0.088);
+  position: absolute;
+  height: 50%;
+  right: 3vw;
+  width: 30px;
+  border-radius: 50px;
+  padding: 2px 2px 2px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#navigator .nav_btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 15%;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #f58536;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

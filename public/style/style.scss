@@ -41,3 +41,27 @@ header{
     // border: 1px solid green;
     padding: 1% 1%;
 }
+
+
+#navigator{
+    background-color: rgba(255, 255, 255, 0.088);
+    position: absolute;
+    height: 50%;
+    right: 3vw;
+    width: 30px;
+    border-radius:50px;
+    padding:2px 2px 2px 2px;
+    @include flex();
+    flex-direction:column;
+    .nav_btn{
+        margin: 10px 0;
+        width:100%;
+        height: 15%;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background-color: rgb(245, 133, 54);
+        cursor: pointer; 
+
+    }
+}
