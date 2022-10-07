@@ -43,6 +43,7 @@ header h2 {
   height: 50%;
   right: 3vw;
   width: 30px;
+  bottom: 17%;
   border-radius: 50px;
   padding: 2px 2px 2px 2px;
   display: -webkit-box;
@@ -69,5 +70,9 @@ header h2 {
   outline: none;
   background-color: #f58536;
   cursor: pointer;
+}
+
+#navigator .nav_btn:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

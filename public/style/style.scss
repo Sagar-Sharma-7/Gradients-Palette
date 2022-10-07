@@ -49,6 +49,7 @@ header{
     height: 50%;
     right: 3vw;
     width: 30px;
+    bottom: 17%;
     border-radius:50px;
     padding:2px 2px 2px 2px;
     @include flex();
@@ -62,6 +63,8 @@ header{
         outline: none;
         background-color: rgb(245, 133, 54);
         cursor: pointer; 
-
+        &:hover{
+            color: white;
+        }
     }
 }
