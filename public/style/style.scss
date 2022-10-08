@@ -29,6 +29,28 @@ html {
     scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000; 
+  }
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+}
+  
+  
+/* Up and Down Button*/
+::-webkit-scrollbar-button{
+    background-color: #000;
+}
+
+
 body{
     background-color: #000000;
 }
@@ -55,18 +77,21 @@ header{
     @include flex();
     flex-direction:column;
     z-index: 9999;
-    .nav_btn{
-        margin: 10px 0;
-        width:100%;
-        height: 15%;
-        border-radius: 50px;
-        border: none;
-        outline: none;
-        background-color: rgb(245, 133, 54);
-        cursor: pointer; 
-        &:hover{
-            color: white;
+    a{
+        .nav_btn{
+            margin: 10px 0;
+            width:30px;
+            height: 10vh;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: rgb(245, 133, 54);
+            cursor: pointer; 
+            
+            &:hover{
+                color: white;
         }
+            }
     }
 }
 
