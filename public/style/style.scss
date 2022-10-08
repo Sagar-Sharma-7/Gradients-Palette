@@ -6,7 +6,7 @@
 
 @mixin grid($item){
     display: grid;
-    grid-template-columns: repeat(1fr, $item);
+    grid-template-columns: repeat($item, 1fr);
 }
 
 @mixin dimension($ln, $hg){
@@ -45,7 +45,7 @@ header{
 
 #navigator{
     background-color: rgba(255, 255, 255, 0.088);
-    position: absolute;
+    position: fixed;
     height: 50%;
     right: 3vw;
     width: 30px;
@@ -54,6 +54,7 @@ header{
     padding:2px 2px 2px 2px;
     @include flex();
     flex-direction:column;
+    z-index: 9999;
     .nav_btn{
         margin: 10px 0;
         width:100%;
@@ -65,6 +66,33 @@ header{
         cursor: pointer; 
         &:hover{
             color: white;
+        }
+    }
+}
+
+.container{
+    @include dimension(85vw, 100%);
+    margin-top: 2%;
+    margin-left: 3vw;
+    .palettes{
+        margin-bottom: 10%;
+        @include dimension(100%, 70vh);
+        @include grid(4);
+        grid-gap: 2vw;
+        .box{
+            border: 1px solid blue;
+            border-radius: 50px;
+        }
+        .horizontal1, .horizontal2{
+            grid-column: 1/ span 2;
+        }
+        .vertical1{
+            grid-column: 3;
+            grid-row: 1/ span 2;
+        }
+        .vertical2{
+            grid-column: 4;
+            grid-row: 1/ span 2;
         }
     }
 }
