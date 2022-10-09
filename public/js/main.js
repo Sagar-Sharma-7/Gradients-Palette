@@ -11,6 +11,17 @@ downward.addEventListener("click", () => {
             clearInterval(y)
         }
     },1);
+
+    setTimeout(() => {
+        let z = 85;
+        const a = setInterval(() => {
+        downward.style.top = `${x}px`;
+        x -= 1
+        if(x < 0){
+            clearInterval(a)
+        }
+    },1);
+    }, 1000);
 });
 
 upward.addEventListener("click", () => {
@@ -23,4 +34,16 @@ upward.addEventListener("click", () => {
             clearInterval(y)
         }
     },1);
+
+    setTimeout(() => {
+        let z = 85;
+        const a = setInterval(() => {
+        upward.style.top = `-${x}px`;
+        x -= 1
+        if(x < 0){
+            clearInterval(a)
+        }
+    },1);
+    }, 1000);
+    
 });
