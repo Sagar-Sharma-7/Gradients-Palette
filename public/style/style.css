@@ -118,6 +118,7 @@ header h2 {
 .container .palettes .box {
   border: 1px solid blue;
   border-radius: 50px;
+  font-size: 0px;
 }
 
 .container .palettes .horizontal1, .container .palettes .horizontal2 {

@@ -1,5 +1,10 @@
 const upward = document.querySelector(".upward");
 const downward = document.querySelector(".downward");
+const boxes = document.querySelectorAll(".box");
+
+
+boxes[0].style.background = `linear-gradient(${boxes[0].innerHTML})`;
+
 
 downward.addEventListener("click", () => {
     downward.style.position = "relative";
@@ -47,3 +52,4 @@ upward.addEventListener("click", () => {
     }, 1000);
     
 });
+

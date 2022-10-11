@@ -107,6 +107,7 @@ header{
         .box{
             border: 1px solid blue;
             border-radius: 50px;
+            font-size: 0px;
         }
         .horizontal1, .horizontal2{
             grid-column: 1/ span 2;
