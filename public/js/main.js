@@ -14,9 +14,14 @@ for(j = 0; j < i; j++){
         boxes[j].style.background =`linear-gradient(to top, ${boxes[j].innerHTML})`;
     }else if((j+1)%4 == 0){
         boxes[j].style.background =`linear-gradient(to bottom, ${boxes[j].innerHTML})`;
-    }
-}
+    };
+};
 
+
+
+
+
+// right side navigator btns
 downward.addEventListener("click", () => {
     downward.style.position = "relative";
     let x = 0;
