@@ -1,10 +1,21 @@
 const upward = document.querySelector(".upward");
 const downward = document.querySelector(".downward");
+const palettes = document.querySelectorAll(".palettes");
 const boxes = document.querySelectorAll(".box");
 
-
-boxes[0].style.background = `linear-gradient(${boxes[0].innerHTML})`;
-
+let i = boxes.length;
+let j=0;
+for(j = 0; j < i; j++){
+    if((j+1)%4 == 1){
+        boxes[j].style.background = `linear-gradient(to right,${boxes[j].innerHTML})`;
+    }else if((j+1)%4 ==2){
+        boxes[j].style.background =`linear-gradient(to left, ${boxes[j].innerHTML})`;
+    }else if((j+1)%4 == 3){
+        boxes[j].style.background =`linear-gradient(to top, ${boxes[j].innerHTML})`;
+    }else if((j+1)%4 == 0){
+        boxes[j].style.background =`linear-gradient(to bottom, ${boxes[j].innerHTML})`;
+    }
+}
 
 downward.addEventListener("click", () => {
     downward.style.position = "relative";
