@@ -118,6 +118,14 @@ header h2 {
 .container .palettes .box {
   border-radius: 50px;
   font-size: 0px;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.container .palettes .box:hover {
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
 }
 
 .container .palettes .horizontal1, .container .palettes .horizontal2 {

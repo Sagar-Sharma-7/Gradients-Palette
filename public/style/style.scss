@@ -109,6 +109,11 @@ header{
             // border: 1px solid blue;
             border-radius: 50px;
             font-size: 0px;
+            transition: 350ms;
+            cursor: pointer;
+            &:hover{
+                transform: scaleY(1.1);
+            }
         }
         .horizontal1, .horizontal2{
             grid-column: 1/ span 2;
