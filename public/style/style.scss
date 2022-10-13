@@ -85,13 +85,18 @@ header{
             border-radius: 50px;
             border: none;
             outline: none;
-            background-color: rgb(245, 133, 54);
             cursor: pointer; 
-            
             &:hover{
                 color: white;
-        }
             }
+            }
+        .upward{
+            background:linear-gradient(to bottom, #CD521D, #ff986c);
+        }
+        .downward{
+            background:linear-gradient(to bottom, #ff986c, #CD521D);
+        }
+
     }
 }
 

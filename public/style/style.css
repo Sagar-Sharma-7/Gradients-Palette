@@ -89,12 +89,21 @@ header h2 {
   border-radius: 50px;
   border: none;
   outline: none;
-  background-color: #f58536;
   cursor: pointer;
 }
 
 #navigator a .nav_btn:hover {
   color: white;
+}
+
+#navigator a .upward {
+  background: -webkit-gradient(linear, left top, left bottom, from(#CD521D), to(#ff986c));
+  background: linear-gradient(to bottom, #CD521D, #ff986c);
+}
+
+#navigator a .downward {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff986c), to(#CD521D));
+  background: linear-gradient(to bottom, #ff986c, #CD521D);
 }
 
 .container {
