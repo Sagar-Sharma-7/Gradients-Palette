@@ -1,3 +1,5 @@
+import {colorList as color} from './colors.js'
+
 const upward = document.querySelector(".upward");
 const downward = document.querySelector(".downward");
 const palettes = document.querySelectorAll(".palettes");
@@ -16,7 +18,6 @@ for(j = 0; j < i; j++){
         boxes[j].style.background =`linear-gradient(to bottom, ${boxes[j].innerHTML})`;
     };
 };
-
 
 
 
