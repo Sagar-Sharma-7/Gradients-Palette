@@ -1,4 +1,4 @@
-import {colorList as color} from './colors.js'
+import {colorList as c} from './colors.js'
 
 const upward = document.querySelector(".upward");
 const downward = document.querySelector(".downward");
@@ -9,15 +9,31 @@ let i = boxes.length;
 let j=0;
 for(j = 0; j < i; j++){
     if((j+1)%4 == 1){
-        boxes[j].style.background = `linear-gradient(to right,${boxes[j].innerHTML})`;
+        boxes[j].style.background = `linear-gradient(to right,${c[j]})`;
     }else if((j+1)%4 ==2){
-        boxes[j].style.background =`linear-gradient(to left, ${boxes[j].innerHTML})`;
+        boxes[j].style.background =`linear-gradient(to left, ${c[j]})`;
     }else if((j+1)%4 == 3){
-        boxes[j].style.background =`linear-gradient(to top, ${boxes[j].innerHTML})`;
+        boxes[j].style.background =`linear-gradient(to top, ${c[j]})`;
     }else if((j+1)%4 == 0){
-        boxes[j].style.background =`linear-gradient(to bottom, ${boxes[j].innerHTML})`;
+        boxes[j].style.background =`linear-gradient(to bottom, ${c[j]})`;
     };
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
