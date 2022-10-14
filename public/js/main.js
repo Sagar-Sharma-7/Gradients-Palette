@@ -27,9 +27,9 @@ for(j = 0; j < i; j++){
 
 boxes.forEach(box => {
     box.addEventListener("click", () => {
-        alert(box.style.background)
-    })
-})
+        navigator.clipboard.writeText(box.style.background)
+    });
+});
 
 
 
