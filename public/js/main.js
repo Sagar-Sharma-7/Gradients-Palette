@@ -20,9 +20,16 @@ for(j = 0; j < i; j++){
 };
 
 
+// $( ".box" ).click(function() {
+//     let color = $( this ).css( "linear-gradient" );
+//     console.log(color)
+//   });
 
-
-
+boxes.forEach(box => {
+    box.addEventListener("click", () => {
+        alert(box.style.background)
+    })
+})
 
 
 
