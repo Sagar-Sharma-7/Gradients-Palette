@@ -38,8 +38,18 @@ boxes.forEach(box => {
             bottom += 1;
             if(bottom>0){
                 clearInterval(copy_interval);
+                setTimeout(() => {
+                    let bottom = 0;
+                    let copy_interval_two = setInterval(() =>{
+                        copy_msg.style.bottom = `${bottom}vh`;
+                        bottom -= 1;
+                        if(bottom < -50){
+                            clearInterval(copy_interval_two);
+                        }
+                    },1)
+                }, 2000);
             }
-        },1)
+        },1);
 
     });
 });
