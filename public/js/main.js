@@ -4,6 +4,8 @@ const upward = document.querySelector(".upward");
 const downward = document.querySelector(".downward");
 const palettes = document.querySelectorAll(".palettes");
 const boxes = document.querySelectorAll(".box");
+const copy_msg = document.querySelector(".copy_msg");
+const code = document.querySelector("#code")
 
 let i = boxes.length;
 let j=0;
@@ -27,7 +29,18 @@ for(j = 0; j < i; j++){
 
 boxes.forEach(box => {
     box.addEventListener("click", () => {
-        navigator.clipboard.writeText(box.style.background)
+        let rgb = box.style.background;
+        navigator.clipboard.writeText(rgb);
+        code.innerHTML = rgb;
+        let bottom = -50;
+        let copy_interval = setInterval(() => {
+            copy_msg.style.bottom = `${bottom}vh`;
+            bottom += 1;
+            if(bottom>0){
+                clearInterval(copy_interval);
+            }
+        },1)
+
     });
 });
 
