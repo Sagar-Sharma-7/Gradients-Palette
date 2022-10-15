@@ -27,5 +27,10 @@ const colorList = ['#6924FF, #9666FF',
                    '#83EAF1, #63A4FF', 
                    '#83EAF1, #63A4FF', 
                    '#83EAF1, #63A4FF',  
-                   '#83EAF1, #63A4FF',  
+                   '#83EAF1, #63A4FF',
+                   '#CD521D, #FF824D',
+                   '#CD521D, #FF824D',  
+                   '#CD521D, #FF824D',  
+                   '#CD521D, #FF824D',  
+
                 ];
