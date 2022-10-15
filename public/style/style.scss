@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 @mixin flex($jus: center, $alg: center){
     display: flex;
     justify-content: $jus;
@@ -53,12 +55,15 @@ html {
 
 body{
     background-color: #000000;
+    font-family: 'Lora', serif;
 }
 
 header{
     @include flex(space-between, center);
     h2{
         color: #ffffff;
+        padding-right:1%;
+        font-weight: 100;
     }
     // border: 1px solid green;
     padding: 1% 1%;
@@ -76,7 +81,7 @@ header{
     padding:2px 2px 2px 2px;
     @include flex();
     flex-direction:column;
-    z-index: 9999;
+    z-index: 9000;
     a{
         .nav_btn{
             margin: 10px 0;
@@ -99,6 +104,23 @@ header{
 
     }
 }
+
+
+.copy_msg{
+    position: fixed;
+    bottom: -50vh;
+    z-index: 9999;
+    background-color: rgb(106, 239, 80);
+    padding:5vh 5vw 5vh 5vw;
+    @include dimension(100%, auto);
+    font-size:1.5rem;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    border-radius:30px 30px 0px 0px;
+
+}
+
 
 .container{
     @include dimension(85vw, 100%);
