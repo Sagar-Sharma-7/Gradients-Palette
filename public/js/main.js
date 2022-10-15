@@ -4,6 +4,7 @@ const upward = document.querySelector(".upward");
 const downward = document.querySelector(".downward");
 const palettes = document.querySelectorAll(".palettes");
 const boxes = document.querySelectorAll(".box");
+const copy_div = document.querySelector(".copy_div");
 const copy_msg = document.querySelector(".copy_msg");
 const code = document.querySelector("#code")
 
@@ -22,22 +23,19 @@ for(j = 0; j < i; j++){
 };
 
 
-// $( ".box" ).click(function() {
-//     let color = $( this ).css( "linear-gradient" );
-//     console.log(color)
-//   });
-
 boxes.forEach(box => {
     box.addEventListener("click", () => {
         let rgb = box.style.background;
         navigator.clipboard.writeText(rgb);
         code.innerHTML = rgb;
         let bottom = -50;
+        copy_div.style.display = "Block";
         let copy_interval = setInterval(() => {
             copy_msg.style.bottom = `${bottom}vh`;
             bottom += 1;
             if(bottom>0){
                 clearInterval(copy_interval);
+                
                 setTimeout(() => {
                     let bottom = 0;
                     let copy_interval_two = setInterval(() =>{
@@ -45,6 +43,8 @@ boxes.forEach(box => {
                         bottom -= 1;
                         if(bottom < -50){
                             clearInterval(copy_interval_two);
+                            copy_div.style.display = "none";
+
                         }
                     },1)
                 }, 2000);
@@ -53,19 +53,6 @@ boxes.forEach(box => {
 
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // right side navigator btns

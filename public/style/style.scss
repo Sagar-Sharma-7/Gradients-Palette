@@ -105,20 +105,25 @@ header{
     }
 }
 
-
-.copy_msg{
+.copy_div{
+    @include dimension(100vw, 100vh);
+    z-index:9999;
     position: fixed;
-    bottom: -50vh;
-    z-index: 9999;
-    background-color: rgb(106, 239, 80);
-    padding:5vh 5vw 5vh 5vw;
-    @include dimension(100%, auto);
-    font-size:1.5rem;
-    color: white;
-    text-align: center;
-    line-height: 3rem;
-    border-radius:30px 30px 0px 0px;
-
+    display: none;
+    .copy_msg{
+        position: fixed;
+        bottom: -50vh;
+        z-index: 9999;
+        background-color: rgb(106, 239, 80);
+        padding:5vh 5vw 5vh 5vw;
+        @include dimension(100%, auto);
+        font-size:1.5rem;
+        color: white;
+        text-align: center;
+        line-height: 3rem;
+        border-radius:30px 30px 0px 0px;
+        
+    }
 }
 
 
