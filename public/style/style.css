@@ -55,6 +55,11 @@ header {
   padding: 1% 1%;
 }
 
+header img {
+  width: 10vw;
+  height: auto;
+}
+
 header h2 {
   color: #ffffff;
   padding-right: 1%;
@@ -66,7 +71,7 @@ header h2 {
   position: fixed;
   height: 50%;
   right: 3vw;
-  width: 30px;
+  width: 10px;
   bottom: 17%;
   border-radius: 50px;
   padding: 2px 2px 2px 2px;
@@ -184,5 +189,12 @@ header h2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/ span 2;
+}
+
+@media all and (max-width: 850px) {
+  header img {
+    width: 15vh;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
