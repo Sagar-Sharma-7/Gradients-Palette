@@ -197,4 +197,28 @@ header h2 {
     height: auto;
   }
 }
+
+@media all and (max-width: 600px) {
+  #navigator {
+    right: 5vw;
+  }
+  .container .palettes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .container .palettes .vertical1 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .container .palettes .vertical2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
 /*# sourceMappingURL=style.css.map */

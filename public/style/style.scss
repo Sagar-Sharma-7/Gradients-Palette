@@ -172,3 +172,22 @@ header{
         }
     }
 }
+
+@media all and (max-width:600px){
+    #navigator{
+        right: 5vw;
+    }
+    .container{
+        .palettes{
+            @include grid(1);
+            .vertical1{
+                grid-column: 1;
+                grid-row:1;
+            }
+            .vertical2{
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+    }
+}
