@@ -10,8 +10,6 @@
   <br>
   <img src="public/images/result2.png" title="result">
   <br>
-  <br>
-  <img src="public/images/result3.png">
 </p>
 
 <hr>
