@@ -193,7 +193,7 @@ header h2 {
 
 @media all and (max-width: 850px) {
   header img {
-    width: 15vh;
+    width: 15vw;
     height: auto;
   }
 }
@@ -219,6 +219,22 @@ header h2 {
     grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
+  }
+}
+
+@media all and (max-width: 450px) {
+  header {
+    padding: 3% 3%;
+  }
+  header img {
+    width: 17vw;
+    height: auto;
+  }
+  #navigator {
+    right: 3vw;
+  }
+  #navigator a .nav_btn {
+    width: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

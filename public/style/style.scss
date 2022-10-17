@@ -168,7 +168,7 @@ header{
 @media all and (max-width:850px){
     header{
         img{
-            @include dimension(15vh, auto)
+            @include dimension(15vw, auto)
         }
     }
 }
@@ -187,6 +187,23 @@ header{
             .vertical2{
                 grid-column: 1;
                 grid-row: 2;
+            }
+        }
+    }
+}
+
+@media all and (max-width:450px){
+    header{
+        img{
+            @include dimension(17vw, auto)
+        }
+        padding: 3% 3%;
+    }
+    #navigator{
+        right: 3vw;
+        a{
+            .nav_btn{
+                width:20px;
             }
         }
     }
