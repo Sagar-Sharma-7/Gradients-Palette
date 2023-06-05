@@ -80,6 +80,11 @@ const colorList = ['#6924FF, #9666FF',
                    '#fffc00, #ffffff',
                    '#fffc00, #ffffff',
                    '#fffc00, #ffffff',
+                   '#ed4264, #ffedbc',
+                   '#ed4264, #ffedbc',
+                   '#ed4264, #ffedbc',
+                   '#ed4264, #ffedbc',
+
 
 
                 ];
