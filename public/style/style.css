@@ -1,240 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 12px;
-  scroll-behavior: smooth;
-}
-
-@media (min-width: 700px) {
-  html {
-    font-size: calc(10px + 0.5vw);
-  }
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 1px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #000;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: white;
-}
-
-/* Up and Down Button*/
-::-webkit-scrollbar-button {
-  background-color: #000;
+  padding: 0%;
+  margin: 0%;
 }
 
 body {
-  background-color: #000000;
-  font-family: 'Lora', serif;
+  background-color: #ffffff;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  height: 85px;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1% 1%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
 }
-
-header img {
-  width: 10vw;
-  height: auto;
+header #logo img {
+  height: 70px;
 }
-
-header h2 {
+header #social_btn {
+  display: flex;
+  gap: 15px;
+}
+header #social_btn .insta_btn {
+  font-size: 12px;
+  padding: 10px 20px;
   color: #ffffff;
-  padding-right: 1%;
-  font-weight: 100;
+  background-color: rgb(3, 3, 3);
 }
-
-#navigator {
-  background-color: rgba(255, 255, 255, 0.088);
-  position: fixed;
-  height: 50%;
-  right: 3vw;
-  width: 10px;
-  bottom: 17%;
-  border-radius: 50px;
-  padding: 2px 2px 2px 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  z-index: 9000;
+header #social_btn .insta_btn span {
+  margin-left: 5px;
 }
-
-#navigator a .nav_btn {
-  margin: 10px 0;
-  width: 30px;
-  height: 10vh;
+header #social_btn .github_btn {
+  font-size: 32px;
+  background-color: transparent;
+}
+header #social_btn button {
   border-radius: 50px;
   border: none;
   outline: none;
+}
+header #social_btn button:hover {
   cursor: pointer;
-}
-
-#navigator a .nav_btn:hover {
-  color: white;
-}
-
-#navigator a .upward {
-  background: -webkit-gradient(linear, left top, left bottom, from(#CD521D), to(#ff986c));
-  background: linear-gradient(to bottom, #CD521D, #ff986c);
-}
-
-#navigator a .downward {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff986c), to(#CD521D));
-  background: linear-gradient(to bottom, #ff986c, #CD521D);
-}
-
-.copy_div {
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  position: fixed;
-  display: none;
-}
-
-.copy_div .copy_msg {
-  position: fixed;
-  bottom: -50vh;
-  z-index: 9999;
-  background-color: #6aef50;
-  padding: 5vh 5vw 5vh 5vw;
-  width: 100%;
-  height: auto;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  line-height: 3rem;
-  border-radius: 30px 30px 0px 0px;
-}
-
-.container {
-  width: 85vw;
-  height: 100%;
-  margin-top: 2%;
-  margin-left: 3vw;
-}
-
-.container .palettes {
-  margin-bottom: 10%;
-  width: 100%;
-  height: 70vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2vw;
-}
-
-.container .palettes .box {
-  border-radius: 50px;
-  font-size: 0px;
-  -webkit-transition: 350ms;
-  transition: 350ms;
-  cursor: pointer;
-}
-
-.container .palettes .box:hover {
-  -webkit-transform: scaleY(1.1);
-          transform: scaleY(1.1);
-}
-
-.container .palettes .horizontal1, .container .palettes .horizontal2 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/ span 2;
-}
-
-.container .palettes .vertical1 {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/ span 2;
-}
-
-.container .palettes .vertical2 {
-  -ms-grid-column: 4;
-  grid-column: 4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/ span 2;
-}
-
-@media all and (max-width: 850px) {
-  header img {
-    width: 15vw;
-    height: auto;
-  }
-}
-
-@media all and (max-width: 600px) {
-  #navigator {
-    right: 5vw;
-  }
-  .container .palettes {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .container .palettes .vertical1 {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-  .container .palettes .vertical2 {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-}
-
-@media all and (max-width: 450px) {
-  header {
-    padding: 3% 3%;
-  }
-  header img {
-    width: 17vw;
-    height: auto;
-  }
-  #navigator {
-    right: 3vw;
-  }
-  #navigator a .nav_btn {
-    width: 20px;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
