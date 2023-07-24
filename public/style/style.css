@@ -45,15 +45,13 @@ header #social_btn button:hover {
 }
 
 .container {
-  border: 1px solid green;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .container .palettes_wrap {
-  border: 1px solid blue;
-  max-width: 1440px;
+  max-width: 1640px;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -62,4 +60,10 @@ header #social_btn button:hover {
 .container .palettes_wrap .palette {
   border: 1px solid red;
   height: 200px;
+  border-radius: 2px;
+  transition: 400ms;
+}
+.container .palettes_wrap .palette:hover {
+  transform: scale(1.04);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
