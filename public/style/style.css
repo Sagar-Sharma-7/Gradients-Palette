@@ -42,4 +42,24 @@ header #social_btn button {
 }
 header #social_btn button:hover {
   cursor: pointer;
+}
+
+.container {
+  border: 1px solid green;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .palettes_wrap {
+  border: 1px solid blue;
+  max-width: 1440px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.container .palettes_wrap .palette {
+  border: 1px solid red;
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */
