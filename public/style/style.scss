@@ -5,6 +5,23 @@
     margin: 0%;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+::-webkit-scrollbar-thumb {
+  background-color: #7d7d7d;
+}
+
+::-webkit-scrollbar-button{
+    background-color: transparent;
+    display: none;
+}
+
 body{
     background-color: #ffffff;
     overflow-x: hidden;
