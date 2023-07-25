@@ -95,7 +95,7 @@ header #social_btn button:hover {
   border-top: 1px solid rgb(238, 238, 238);
   position: fixed;
   background-color: #ffffff;
-  bottom: 0px;
+  bottom: -100px;
   width: 100vw;
   display: flex;
   justify-content: space-between;

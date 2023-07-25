@@ -1,8 +1,9 @@
 // function to fetch and read json file
 import data from './colors.json' assert { type: 'json' };
 
-const color = document.querySelectorAll(".color")
-const color_hex = document.querySelectorAll(".code")
+const copy_wrap = document.querySelector(".copy_wrap")
+const color = document.querySelectorAll(".color");
+const color_hex = document.querySelectorAll(".code");
 
 const palettes_wrap = document.getElementsByClassName("palettes_wrap");
 // function to create palette divs
@@ -23,9 +24,9 @@ const total_palettes = palettes.length;
 const applyGradient = () => {
     let i = 0;
     for(; i < total_palettes; i++){
-        palettes[i].style.background=`linear-gradient(to bottom right, ${data[i+1].colors[0]}, ${data[i+1].colors[1]})`;
-        palettes[i].setAttribute("data-color_one", data[i+1].colors[0]);
-        palettes[i].setAttribute("data-color_two", data[i+1].colors[1]);
+        palettes[i].style.background=`linear-gradient(to bottom right, ${data[total_palettes - i].colors[0]}, ${data[total_palettes - i].colors[1]})`;
+        palettes[i].setAttribute("data-color_one", data[total_palettes - i].colors[0]);
+        palettes[i].setAttribute("data-color_two", data[total_palettes - i].colors[1]);
     };
 }
 
@@ -40,8 +41,9 @@ palettes.forEach(item =>{
         color_hex[1].innerHTML = color_two.toUpperCase();
         color[0].style.backgroundColor = color_one;
         color[1].style.backgroundColor = color_two;
-    })
-})
+        copy_wrap.style.bottom = "0px";
+    });
+});
 
 
 
