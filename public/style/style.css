@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -5,10 +6,16 @@
 
 body {
   background-color: #ffffff;
+  overflow-x: hidden;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 header {
   border-bottom: 1px solid rgb(238, 238, 238);
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 9999;
   height: 85px;
   display: flex;
   justify-content: space-between;
@@ -58,11 +65,65 @@ header #social_btn button:hover {
   grid-gap: 20px;
 }
 .container .palettes_wrap .palette {
-  height: 200px;
+  height: 500px;
   border-radius: 2px;
   transition: 400ms;
 }
 .container .palettes_wrap .palette:hover {
   transform: scale(1.04);
   cursor: pointer;
+}
+
+.copy_wrap {
+  border-top: 1px solid rgb(238, 238, 238);
+  position: fixed;
+  background-color: #ffffff;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.copy_wrap .hexcode {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.copy_wrap .hexcode .color {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  border: 3px solid gray;
+}
+.copy_wrap .hexcode .arrow {
+  color: gray;
+}
+.copy_wrap .toggle_down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: gray;
+  transition: 200ms;
+}
+.copy_wrap .toggle_down:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.copy_wrap .copy_btn {
+  margin-right: 10px;
+  border: 1px solid rgb(71, 221, 58);
+  outline: none;
+  background-color: rgb(49, 231, 32);
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #ffffff;
+  transition: 200ms;
+}
+.copy_wrap .copy_btn:hover {
+  cursor: pointer;
+  background-color: black;
+  border: 1px solid gray;
 }/*# sourceMappingURL=style.css.map */
