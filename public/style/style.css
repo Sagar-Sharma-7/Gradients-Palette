@@ -58,7 +58,6 @@ header #social_btn button:hover {
   grid-gap: 20px;
 }
 .container .palettes_wrap .palette {
-  border: 1px solid red;
   height: 200px;
   border-radius: 2px;
   transition: 400ms;

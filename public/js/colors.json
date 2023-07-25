@@ -7,5 +7,17 @@
     },
     {
         "colors":["#3a7bd5", "#3a7bd5"]
+    },
+    {
+        "colors": ["#F2994A","#F2C94C"]
+    },
+    {
+        "colors": ["#E44D26","#F16529"]
+    },
+    {
+        "colors": ["#4AC29A","#BDFFF3"]
+    },
+    {
+        "colors": ["#FF416C","#FF4B2B"]
     }
 ]

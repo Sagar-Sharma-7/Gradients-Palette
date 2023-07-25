@@ -1,6 +1,6 @@
 // function to fetch and read json file
 import data from './colors.json' assert { type: 'json' };
-console.log(data);
+// console.log(data);
 
 const palettes_wrap = document.getElementsByClassName("palettes_wrap");
 // function to create palette divs
@@ -17,7 +17,7 @@ createPalettes();
 // function to apply linear gradient to palette divs
 const palettes = document.querySelectorAll(".palette");
 const total_palettes = palettes.length;
-console.log(total_palettes)
+// console.log(total_palettes)
 const applyGradient = () => {
     let i = 0;
     for(; i < total_palettes; i++){
