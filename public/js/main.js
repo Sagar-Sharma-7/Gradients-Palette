@@ -7,5 +7,5 @@ const handleVisibilityChange = () => {
     }
 }
 
-
 document.addEventListener("visibilitychange", handleVisibilityChange);
+
