@@ -4,6 +4,8 @@ import data from './colors.json' assert { type: 'json' };
 const copy_wrap = document.querySelector(".copy_wrap")
 const color = document.querySelectorAll(".color");
 const color_hex = document.querySelectorAll(".code");
+const toggle_down = document.querySelector(".toggle_down");
+const copy_btn = document.querySelector(".copy_btn")
 
 const palettes_wrap = document.getElementsByClassName("palettes_wrap");
 // function to create palette divs
@@ -44,6 +46,24 @@ palettes.forEach(item =>{
         copy_wrap.style.bottom = "0px";
     });
 });
+toggle_down.addEventListener("click", () => {
+    copy_wrap.style.bottom = "-100px";
+});
+
+// function to copy gradient hexcode
+copy_btn.addEventListener("click", async () => {
+    try {
+        let copied_text = `linear-gradient(to bottom right, ${color_hex[0].innerHTML}, ${color_hex[1].innerHTML})`;
+        await navigator.clipboard.writeText(copied_text);
+        copy_btn.innerHTML = "Copied!";
+        setTimeout(() => {
+            copy_btn.innerHTML = "Copy CSS"
+        }, 1000);
+    } catch (error) {
+        console.log("failed to copy due to: ",error);
+    };
+});
+
 
 
 
