@@ -31,5 +31,20 @@
     },
     {
         "colors": ["#5C258D","#4389A2"]
+    },
+    {
+        "colors": ["#ED213A","#93291E"]
+    },
+    {
+        "colors": ["#0083B0","#00B4DB"]
+    },
+    {
+        "colors": ["#FFFFBA","#FEEFBA"]
+    },
+    {
+        "colors": ["#3f2b96","#a8c0ff"]
+    },
+    {
+        "colors": ["#8f94fb","#a8c0ff"]
     }
 ]

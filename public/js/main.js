@@ -41,7 +41,7 @@ palettes.forEach(item =>{
     item.addEventListener("mouseover", () => {
         let color_one = item.getAttribute("data-color_one");
         let color_two = item.getAttribute("data-color_two");
-        item.innerHTML = `${color_one} | ${color_two}`;
+        item.innerHTML = `${color_one.toUpperCase()} | ${color_two.toUpperCase()}`;
     });
 });
 palettes.forEach(item => {
