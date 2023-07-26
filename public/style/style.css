@@ -84,6 +84,10 @@ header #social_btn button:hover {
 .container .palettes_wrap .palette {
   height: 200px;
   border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
   transition: 400ms;
 }
 .container .palettes_wrap .palette:hover {

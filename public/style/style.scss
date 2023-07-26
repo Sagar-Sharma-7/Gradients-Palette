@@ -86,6 +86,10 @@ header{
         .palette{
             height: 200px;
             border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
             transition: 400ms;
             &:hover{
                 transform: scale(1.04);

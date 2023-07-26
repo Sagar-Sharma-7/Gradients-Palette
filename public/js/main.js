@@ -36,6 +36,20 @@ const applyGradient = () => {
 
 applyGradient();
 
+// show hexcode when hover on palette;
+palettes.forEach(item =>{
+    item.addEventListener("mouseover", () => {
+        let color_one = item.getAttribute("data-color_one");
+        let color_two = item.getAttribute("data-color_two");
+        item.innerHTML = `${color_one} | ${color_two}`;
+    });
+});
+palettes.forEach(item => {
+    item.addEventListener("mouseout", () => {
+        item.innerHTML = "";
+    });
+});
+
 // function to show copy wrap div when user click on palette
 palettes.forEach(item =>{
     item.addEventListener("click", ()=> {
@@ -51,6 +65,8 @@ palettes.forEach(item =>{
 toggle_down.addEventListener("click", () => {
     copy_wrap.style.bottom = "-100px";
 });
+
+
 
 // function to copy gradient hexcode
 copy_btn.addEventListener("click", async () => {
