@@ -5,9 +5,11 @@ const copy_wrap = document.querySelector(".copy_wrap")
 const color = document.querySelectorAll(".color");
 const color_hex = document.querySelectorAll(".code");
 const toggle_down = document.querySelector(".toggle_down");
-const copy_btn = document.querySelector(".copy_btn")
-
+const copy_btn = document.querySelector(".copy_btn");
+const insta_btn =document.querySelector(".insta_btn");
+const github_btn = document.querySelector(".github_btn");
 const palettes_wrap = document.getElementsByClassName("palettes_wrap");
+
 // function to create palette divs
 const createPalettes = () => {
     let i = 1
@@ -22,7 +24,7 @@ createPalettes();
 // function to apply linear gradient to palette divs
 const palettes = document.querySelectorAll(".palette");
 const total_palettes = palettes.length;
-// console.log(total_palettes)
+
 const applyGradient = () => {
     let i = 0;
     for(; i < total_palettes; i++){
@@ -64,16 +66,15 @@ copy_btn.addEventListener("click", async () => {
     };
 });
 
-
-
-
-
-
-
-
-
-
-
+// scripting of social media buttons 
+insta_btn.addEventListener("click", () => {
+    let url = "https://www.instagram.com/sagar._.sharma._.7/";
+    window.open(url, '_blank');
+});
+github_btn.addEventListener("click", () => {
+    let url = "https://github.com/Sagar-Sharma-7";
+    window.open(url, '_blank');
+});
 
 // Function to change title when tab is switched
 const handleVisibilityChange = () => {
