@@ -148,3 +148,61 @@ header{
         }
     }
 }
+
+// responsive for tablets
+@media all and (max-width:1000px){
+    header{
+        #logo{
+            img{
+                height: 60px;
+            }
+        }
+        #social_btn{
+            .insta_btn{
+                padding: 2px;
+                font-size: 28px;
+                background-color: transparent;
+                color: #000000;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    .container{
+        .palettes_wrap{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+// responsive for phones
+@media all and (max-width:650px){
+    header{
+        #logo{
+            img{
+                height: 50px;
+            }
+        }
+    }
+    .container{
+        .palettes_wrap{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .copy_wrap{
+        padding-bottom: 20px;
+        .hexcode{
+            font-size: 12px;
+            .arrow{
+                display: none;
+            }
+        }
+        .toggle_down{
+            bottom: 0;
+        }
+        .copy_btn{
+            font-size: 12px;
+        }
+    }
+}

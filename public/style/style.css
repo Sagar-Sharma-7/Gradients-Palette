@@ -142,4 +142,45 @@ header #social_btn button:hover {
   cursor: pointer;
   background-color: black;
   border: 1px solid gray;
+}
+
+@media all and (max-width: 1000px) {
+  header #logo img {
+    height: 60px;
+  }
+  header #social_btn .insta_btn {
+    padding: 2px;
+    font-size: 28px;
+    background-color: transparent;
+    color: #000000;
+  }
+  header #social_btn .insta_btn span {
+    display: none;
+  }
+  .container .palettes_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 650px) {
+  header #logo img {
+    height: 50px;
+  }
+  .container .palettes_wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .copy_wrap {
+    padding-bottom: 20px;
+  }
+  .copy_wrap .hexcode {
+    font-size: 12px;
+  }
+  .copy_wrap .hexcode .arrow {
+    display: none;
+  }
+  .copy_wrap .toggle_down {
+    bottom: 0;
+  }
+  .copy_wrap .copy_btn {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
