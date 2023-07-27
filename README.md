@@ -5,10 +5,8 @@
 <hr>
 
 <p align="center">
-  <img src="public/images/result1.png" title="result">
+  <img src="public/images/result.png" title="result">
   <br>
-  <br>
-  <img src="public/images/result2.png" title="result">
   <br>
 </p>
 
