@@ -36,6 +36,21 @@ body{
 
 ```
 
+## How to add your own gradient to this project?
+1. Open **colors.json** file from public/js
+2. Add the following lines of code to json file.
+```javascript
+[
+  {
+    ...
+  },
+  {
+    "colors":["color1", "color2"]
+  }
+]
+```
+3. Save, commit and push.
+
  ## Cloning this repositary using command line
  1. Open **Git Bash**.
  1. Change the current working directory to the location where you want the cloned directory.
