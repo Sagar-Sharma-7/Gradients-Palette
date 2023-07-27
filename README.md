@@ -6,8 +6,6 @@
 
 <p align="center">
   <img src="public/images/result.png" title="result">
-  <br>
-  <br>
 </p>
 
 <hr>
@@ -20,16 +18,20 @@
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 <img src="https://img.shields.io/badge/Javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+<img src ="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
+<img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+<img src="https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=whit">
+
 
 </p>
 <hr>
 
 ## Fonts used in Gradient Palette
 ```css 
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
 
 body{
-  font-family: 'Lora', serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 ```
@@ -43,6 +45,8 @@ body{
 
  ## How to reach me?
  [ ![ForTheBadge makes-people-smile](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:6969sagarsharma@gmail.com)
+
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/sagar.designs_/)
  <hr>
  <br>
 
