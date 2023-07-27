@@ -84,7 +84,7 @@ copy_btn.addEventListener("click", async () => {
 
 // scripting of social media buttons 
 insta_btn.addEventListener("click", () => {
-    let url = "https://www.instagram.com/sagar._.sharma._.7/";
+    let url = "https://www.instagram.com/sagar.designs_/";
     window.open(url, '_blank');
 });
 github_btn.addEventListener("click", () => {
