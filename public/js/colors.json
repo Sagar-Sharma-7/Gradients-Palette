@@ -49,5 +49,11 @@
     },
     {
         "colors": ["#f4c4f3","#fc67fa"]
+    },
+    {
+        "colors": ["#ff7e5f","#feb47b"]
+    },
+    {
+        "colors": ["#ec008c","#fc6767"]
     }
 ]
