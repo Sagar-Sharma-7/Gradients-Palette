@@ -67,5 +67,11 @@
     },
     {
         "colors": ["#36D1DC","#5B86E5"]
+    },
+    {
+        "colors": ["#FFAFBD","#ffc3a0"]
+    },
+    {
+        "colors": ["#DCE35B","#45B649"]
     }
 ]
