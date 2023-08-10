@@ -76,5 +76,11 @@
     },
     {
         "colors": ["#FFEEEE","#DDEFBB"]
+    },
+    {
+        "colors": ["#007991","#78ffd6"]
+    },
+    {
+        "colors": ["#F2994A","#F2C94C"]
     }
 ]
